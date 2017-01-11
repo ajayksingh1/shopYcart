@@ -1,0 +1,26 @@
+<div id="main">
+<section id="content">
+<ul>
+     <h3>Books</h3>
+	{{#each model as |books|}}
+	<li>
+		<div class="img">
+			<a href="#"><img alt="" src="{{books.imageUrl}}"></a>
+		</div>
+		<div class="info"> 
+			<a class="title" href="#">{{books.title}}</a>
+			<p>{{books.description}}</p>
+			<div class="price">
+				<span class="st">Our price:</span><strong>Rs{{books.price}}</strong>
+			</div>
+			<div class="actions">
+				<a href="#">Details</a>
+				<a href="#">Add to cart</a>
+			</div>
+		</div>
+		</li>
+	{{/each}}
+	</ul>
+	</section>
+</div>
+{{outlet}}

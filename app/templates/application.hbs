@@ -6,14 +6,16 @@
                    <li>{{#link-to 'application'}}Home{{/link-to}}</li>
                    <li>{{#link-to 'application'}}Specials{{/link-to}}</li>
                    <li>{{#link-to 'application'}}All Products{{/link-to}}</li>
-                   <li>{{#link-to 'application'}}Contact{{/link-to}}</li>
-                   <li>{{#link-to 'application'}}About{{/link-to}}</li>
+                   <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+                   <li>{{#link-to 'about'}}About{{/link-to}}</li>
                  </ul>
                </nav>
 
                  <div class="top-head">
                    <div class="logo">
-                      {{#link-to "application"}}<h2>shopYcart</h2>{{/link-to}}
+                      {{#link-to "cart"}}Cart{{/link-to}}
+                      {{#link-to "index"}}<h2>shopYcart</h2>{{/link-to}}
+                      
                   </div>
                    <section id="search">
                      {{input type="text" onfocus="if(this.value=='Search..')" value="Search.." name="q"}}
@@ -28,7 +30,7 @@
                  </div>
               <section id="submenu">
                 <ul>
-                  <li>{{#link-to 'application'}}Category #1{{/link-to}}</li>
+                  <li>{{#link-to 'category'}}Category #1{{/link-to}}</li>
                   <li>{{#link-to 'application'}}Category #2{{/link-to}}</li>
                   <li>{{#link-to 'application'}}Category #3{{/link-to}}</li>
                   <li>{{#link-to 'application'}}Category #4{{/link-to}}</li>
@@ -39,174 +41,14 @@
         </header>
    </div>
 
+<div>
+{{outlet}}
+</div>
 
 
 
 
 
-
-
-
-<div id="main">
-   <section id="content">
-      <div id="left"> 
-         <h3>Last products</h3>
-            <ul>
-               <li>
-                 <div class="img"><a href="#"><img alt="" src="images/post1.jpg"></a></div>
-                       <div class="info"> 
-                         <a class="title" href="#">Product 1</a>
-                         <p>long description here 1</p>
-                         <div class="price">
-                             <span class="st">Our price:</span><strong>$550.00</strong>
-                        </div>
-                        <div class="actions">
-                          <a href="#">Details</a>
-                          <a href="#">Add to cart</a>
-                        </div>
-                  </div>
-                </li>
-                <li>
-                <div class="img"><a href="#"><img alt="" src="images/post2.jpg"></a></div>
-                   <div class="info">
-                       <a class="title" href="#">Product 2</a>
-                        <p>long description here 2</p>
-                        <div class="price">
-                         <span class="st">Our price:</span><strong>$250.00</strong>
-                        </div>
-                        <div class="actions">
-                         <a href="#">Details</a>
-                         <a href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </li>
-                <li> 
-                <div class="img"><a href="#"><img alt="" src="images/post3.jpg"></a></div>
-                        <div class="info">
-                          <a class="title" href="#">Product 3</a>
-                          <p>long description here 3</p>
-                          <div class="price">
-                          <span class="st">Our price:</span><strong>$350.00</strong>
-                        </div>
-                           <div class="actions">
-                           <a href="#">Details</a>
-                           <a href="#">Add to cart</a>
-                        </div>
-                        </div>
-                </li>
-                <li>
-                <div class="img"><a href="#"><img alt="" src="images/post4.jpg"></a></div>
-                          <div class="info">
-                           <a class="title" href="#">Product 4</a>
-                           <p>long description here 1</p>
-                          <div class="price">
-                           <span class="st">Our price:</span><strong>$550.00</strong>
-                          </div>
-                          <div class="actions">
-                            <a href="#">Details</a>
-                            <a href="#">Add to cart</a>
-                          </div>
-                 </div>
-                 </li>
-                 <li>
-                <div class="img"><a href="#"><img alt="" src="images/post5.jpg"></a></div>
-                          <div class="info">
-                             <a class="title" href="#">Product 5</a>
-                             <p>long description here 2</p>
-                          <div class="price">
-                             <span class="st">Our price:</span><strong>$250.00</strong>
-                          </div>
-                          <div class="actions">
-                             <a href="#">Details</a>
-                             <a href="#">Add to cart</a>
-                          </div>
-                </div>
-                 </li>
-                  <li>
-                <div class="img"><a href="#"><img alt="" src="images/post6.jpg"></a></div>
-                           <div class="info">
-                             <a class="title" href="#">Product 6</a>
-                             <p>long description here 3</p>
-                           <div class="price">
-                               <span class="st">Our price:</span><strong>$350.00</strong>
-                           </div>
-                           <div class="actions">
-                             <a href="#">Details</a>
-                             <a href="#">Add to cart</a>
-                           </div>
-                </div>
-                 </li>
-            </ul>
-      </div>
-  
-
-     <div id="right">
-        <h3>Top sells</h3>
-           <ul>
-             <li>
-                <div class="img"><a href="#"><img alt="" src="images/post6.jpg"></a></div>
-                   <div class="info">
-                       <a class="title" href="#">Product 7</a>
-                           <div class="price">
-                             <span class="usual">$600.00 </span>&nbsp;
-                             <span class="special">$500.00</span>
-                            </div>
-                    </div>
-             </li>
-             <li>
-                <div class="img"><a href="#"><img alt="" src="images/post5.jpg"></a></div>
-                   <div class="info">
-                        <a class="title" href="#">Product 8</a>
-                            <div class="price">
-                             <span class="usual">$500.00 </span>&nbsp;
-                             <span class="special">$400.00</span>
-                            </div>
-                   </div>
-              </li>
-              <li>
-                <div class="img"><a href="#"><img alt="" src="images/post4.jpg"></a></div>
-                    <div class="info">
-                        <a class="title" href="#">Product 9</a>
-                            <div class="price">
-                              <span class="usual">$700.00 </span>&nbsp;
-                              <span class="special">$600.25</span>
-                            </div>
-                    </div>
-              </li>
-              <li>
-                 <div class="img"><a href="#"><img alt="" src="images/post3.jpg"></a></div> 
-                    <div class="info">
-                        <a class="title" href="#">Product 10</a>
-                           <div class="price">
-                           <span class="usual">$805.00 </span>&nbsp;
-                           <span class="special">$714.25</span>
-                           </div>
-                    </div>
-              </li>
-              <li>
-                  <div class="img"><a href="#"><img alt="" src="images/post2.jpg"></a></div>
-                    <div class="info">
-                        <a class="title" href="#">Product 11</a>
-                           <div class="price">
-                            <span class="usual">$1205.00 </span>&nbsp;
-                            <span class="special">$1000.25</span>
-                           </div>
-                    </div>
-              </li>
-              <li>
-                  <div class="img"><a href="#"><img alt="" src="images/post1.jpg"></a></div>
-                    <div class="info">
-                       <a class="title" href="#">Product 12</a>
-                        <div class="price">
-                            <span class="usual">$200.00 </span>
-                            <span class="special">$190.25</span>
-                        </div>
-                    </div>
-              </li>
-          </ul>
-       </div>
-    </section>
- </div>
         
 
 
@@ -216,6 +58,5 @@
         </div>
      </footer>
 </body>
-
 
 

@@ -1,0 +1,42 @@
+<h1>Shopping Cart</h1>
+
+  <a href="#">Continue Shopping</a>
+  <a href="#" class="checkout-button">Checkout</a>
+  <table cellspacing="0" class="shopping-cart">
+    <thead>
+      <tr class="headings">
+        <td class="link">&nbsp;</td>
+        <td class="product">Item</td>
+        <td class="price">Price</td>
+        <td class="quantity-span">Quantity</td>
+        <td class="price">Total</td>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each model as |cartUnit|}}
+      <tr> 
+        <td class="link"><label>remove</label></td>
+        <td class="product">
+          <div class="product-img"><img src="{{cartUnit.imageUrl}}"></div>
+          <div class="product-name">{{cartUnit.title}}</div>
+        </td>
+        <td class="price">{{cartUnit.price}}</td>
+        <td class="quantity">1</td>
+        <td class="price">{{cartUnit.price}}</td>
+
+      </tr>
+       {{/each}}  
+      
+      <tr class="totals">
+       
+
+        <td class="quantity-span" colspan="2">Total</td>
+        <td class="price"></td>
+      </tr> 
+   
+    </tbody>
+  </table>
+<div style="clear: both;"></div>
+<a href="#" class="continue-shopping">Continue Shopping</a>
+<a href="#" class="checkout-button">Checkout</a>
+{{outlet}}
