@@ -3,22 +3,22 @@
 <ul>
      <h3>Books</h3>
 	{{#each model as |books|}}
+	{{#link-to 'description' books.pid}}
+	<div class='prod'>
 	<li>
-		<div class="img">
+		<div class="image1">
 			<a href="#"><img alt="" src="{{books.imageUrl}}"></a>
 		</div>
-		<div class="info"> 
-			<a class="title" href="#">{{books.title}}</a>
-			<p>{{books.description}}</p>
+		<div class="details1"> 
+			<a class="title" href="#"><strong>{{books.title}}</strong></a><br><br>
 			<div class="price">
 				<span class="st">Our price:</span><strong>Rs{{books.price}}</strong>
-			</div>
-			<div class="actions">
-				<a href="#">Details</a>
-				<a href="#">Add to cart</a>
-			</div>
+			</div><br>
+			<p>{{books.description}}</p>
 		</div>
 		</li>
+		</div>
+		{{/link-to}}
 	{{/each}}
 	</ul>
 	</section>

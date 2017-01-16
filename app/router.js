@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('about');
   this.route('category');
   this.route('cart');
+  this.route('description',{ path: '/description/:pid' });
 });
 
 export default Router;

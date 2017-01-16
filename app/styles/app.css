@@ -11,7 +11,8 @@ body{
 }
 
 img {
-	border:0 none;
+	border:0 none;logo
+
 }
 
 .container{
@@ -24,7 +25,7 @@ img {
 }
 
 header{
-	background:linear-gradient(to right,red,orange) repeat scroll left top #fff;
+	background:linear-gradient(to right,blue,aqua) repeat scroll left top #fff;
     border-bottom:2px solid #e0e0e0;
     position:relative;
     z-index:10;
@@ -334,14 +335,15 @@ nav ul li a:hover, nav ul li.selected a {
 }
 
 footer {
-   background: none repeat scroll 0 0 #FFFFFF;
-   border-top: 1px solid #E0E0E0;
+   background: none repeat scroll 0 0 #fff;
    margin: 0 0 5px;
    padding: 15px 0 15px 20px;
    text-align: center;
+   position: fixed absolute;
 }
 
 footer #privacy {
+  border: 1px solid #E0E0E0;
    color: #9B9B9B;
    font-size: 12px;
    line-height: 20px;
@@ -363,11 +365,90 @@ footer a{
 .main-left{
   float: left;
   width: 63%;
+  border: 1px solid #E0E0E0;
 }
 .main-right{
   float: right;
   width: 35%;
 }
+.image{
+  margin:0;
+  float: left;
+  margin-left: 10px;
+  width:20%;
+  background-color: #fff;
+  padding:20px 0;
+  overflow: hidden;
+}
+.details{
+  float: left;
+  margin: 0;
+  margin-left: 10px;
+  width:70%;
+  background-color: #fff;
+  padding:20px 0;
+  overflow: hidden;
+}
+.prod{
+  border: 1px solid #E0E0E0;
+  margin: 2px;
+  padding: 20px 0;
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin-left: 30px;
+  overflow: hidden;   
+
+}
+.image1{
+  margin:0;
+  margin-left: 10px;
+  background-color: #fff;
+  padding:20px 0;
+  overflow: hidden;
+}
+.details1{
+  margin: 0;
+  margin-left: 10px;
+  background-color: #fff;
+  padding:20px 0;
+  overflow: hidden;   
+}
+.main1{
+  margin:20px auto 0;
+  padding-left:20px;
+  padding-right: 200px;
+  position:relative;
+  width:1200px;
+}
+.des{
+   margin:20px auto 0;
+  padding-left:20px;
+  padding-right: 200px;
+  position:relative;
+  width:1200px;
+
+}
+.des .details .actions a:first-child {
+    color: #009832;
+    float: left;
+
+}
+.des .details .actions a  {
+    border: 1px solid #E0E0E0;
+    color: #fd7a01;
+    display: block;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
+
 
 
 
@@ -385,8 +466,8 @@ footer a{
 .shopping-cart .link {font-size: 90%; white-space: nowrap;}
 .shopping-cart .product {width: 55%}
 .shopping-cart .price {width: 5%;}
-.shopping-cart .quantity {width: 15%;}
-.shopping-cart .quantity input {width: 30px;}
+.shopping-cart .quantity {width: 5%;}
+
 .shopping-cart .price {width: 20%;}
 .shopping-cart .product-img {border: 1px solid #ccc; background-color: #e9e9e9; padding: 3px; width: 80px; height: 80px; float: left;}
 .shopping-cart .product-img img {max-width:80px;max-height:80px;width:auto;height:auto;}

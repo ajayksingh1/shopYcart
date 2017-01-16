@@ -1,0 +1,17 @@
+<div class="des">
+	
+		<div class="image">
+			<img src="{{model.imageUrl}}">
+		</div>
+		<div class="details">
+			<h2>{{model.title}}</h2><br>
+			<p>{{model.description}}</p><br>
+			<p><strong>Price: Rs {{model.price}}</strong></p><br>
+			<div class="actions">
+	          <a  href="#" {{action "addToCart" model.pid}}>Add to cart</a>
+	          <a href="/cart">Go to cart</a>
+	        </div>
+		</div>
+		
+</div>
+{{outlet}}
