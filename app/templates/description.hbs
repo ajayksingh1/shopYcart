@@ -8,8 +8,8 @@
 			<p>{{model.description}}</p><br>
 			<p><strong>Price: Rs {{model.price}}</strong></p><br>
 			<div class="actions">
-	          <a  href="#" {{action "addToCart" model.pid}}>Add to cart</a>
-	          <a href="/cart">Go to cart</a>
+	          <a  href="#" {{action "addToCart" model}}>Add to cart</a>
+	          {{#link-to "cart"}}Go to Cart{{/link-to}}
 	        </div>
 		</div>
 		

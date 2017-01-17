@@ -13,9 +13,9 @@
       </tr>
     </thead>
     <tbody>
-    {{#each model as |cartUnit|}}
+    {{#each model.itemDetail as |cartUnit|}}
       <tr> 
-        <td class="link"><label>remove</label></td>
+        <td class="link" {{action 'removeProduct' cartUnit}}><label><button class="removal">Remove</button></label></td>
         <td class="product">
           <div class="product-img"><img src="{{cartUnit.imageUrl}}"></div>
           <div class="product-name">{{cartUnit.title}}</div>
@@ -25,13 +25,15 @@
         <td class="price">{{cartUnit.price}}</td>
 
       </tr>
-       {{/each}}  
-      
+       {{/each}}
       <tr class="totals">
         <td></td>
         <td></td>
+        <td></td>
         <td class="quantity-span">Total</td>
-        <td class="price"></td>
+        <td class="price">
+        {{model.totalPrice}}
+        </td>
       </tr> 
    
     </tbody>

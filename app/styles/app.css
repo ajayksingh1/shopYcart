@@ -447,7 +447,10 @@ footer a{
 }
 
 
-
+.removal{
+  background: red;
+  text-decoration-color: white;
+}
 
 
 
